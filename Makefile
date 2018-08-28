@@ -1,8 +1,13 @@
-all:
-	mkdir -p build
-	swig -Wall -c++ -java -package io.kuzzle.sdk -outdir build swig.i
+build:
+	mkdir -p $(BUILDDIR)/build
+	swig -Wall -c++ -java -package io.kuzzle.sdk -outdir $(BUILDDIR)/build $(BUILDDIR)/swig.i
+
+_1: BUILDDIR = 1-extends
+_1: build
+
+all: _1
 
 clean:
-	rm -rf swig_wrap.cxx swig_wrap.h build
+	rm -rf 1-extends/build 1-extends/swig_wrap.cxx 1-extends/swig_wrap.h
 
-re: clean all
+.PHONY: build
