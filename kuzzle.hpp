@@ -5,12 +5,12 @@
 
 namespace kuzzleio {
   class auth {
-		public:
-		int toIgnore;
-		int to_rename;
+    public:
+    int toIgnore;
+    int to_rename;
 
-		void rename_me(const std::string& arg) {}
-	};
+    void rename_me(const std::string& arg) {}
+  };
 
   class server {
     public:
