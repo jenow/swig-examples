@@ -1,6 +1,20 @@
 %module(directors="1") kuzzlesdk
-%{
-  #include "auth.hpp"
-%}
+%include "std_string.i"
 
-%include "auth.hpp"
+%extend kuzzleio::server {
+  void hello() {
+    std::cout << "Hello world" << std::endl;
+  }
+}
+
+%rename(Auth, match="class") auth;
+%ignore kuzzleio::auth::toIgnore;
+%rename(toRename) to_rename;
+// %rename(renameMe) rename_me;
+%rename(renameMe, fullname="1") kuzzleio::auth::rename_me(const std::string& arg);
+
+%javamethodmodifiers kuzzleio::auth::rename_me(const std::string& arg) "private";
+
+
+
+%include "kuzzle.hpp"
