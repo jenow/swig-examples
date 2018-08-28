@@ -1,0 +1,3 @@
+build/
+swig_wrap.cxx
+swig_wrap.h
