@@ -15,6 +15,6 @@
 
 %javamethodmodifiers kuzzleio::auth::rename_me(const std::string& arg) "private";
 
-
+%feature("director") listener;
 
 %include "kuzzle.hpp"
