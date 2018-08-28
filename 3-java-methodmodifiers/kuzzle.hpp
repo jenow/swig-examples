@@ -4,8 +4,7 @@
 #include <string>
 
 namespace kuzzleio {
-  class auth {
-    public:
+  struct auth {
     void make_me_private(const std::string& arg){}
   };
 }
