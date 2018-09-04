@@ -2,9 +2,8 @@
 #define LISTENERS_HPP
 
 namespace kuzzleio {
-  struct listener {
-    virtual void trigger() = 0;
-    virtual ~listener();
+  struct server {
+    long now(){return 1535466635;}
   };
 }
 
