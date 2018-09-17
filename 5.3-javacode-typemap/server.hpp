@@ -1,5 +1,5 @@
-#ifndef LISTENERS_HPP
-#define LISTENERS_HPP
+#ifndef SERVER_HPP
+#define SERVER_HPP
 
 namespace kuzzleio {
   struct server {

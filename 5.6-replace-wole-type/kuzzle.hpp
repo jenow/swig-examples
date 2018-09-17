@@ -5,7 +5,7 @@
 
 namespace kuzzleio {
   struct kuzzle {
-    void f(std::string* s){};
+    std::string my_json_method(std::string& json_body){return "";};
   };
 }
 

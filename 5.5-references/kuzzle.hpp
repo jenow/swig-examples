@@ -1,7 +1,5 @@
-#ifndef LISTENERS_HPP
-#define LISTENERS_HPP
-
-#include <string>
+#ifndef KUZZLE_HPP
+#define KUZZLE_HPP
 
 namespace kuzzleio {
 
